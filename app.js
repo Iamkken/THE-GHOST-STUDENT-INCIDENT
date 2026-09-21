@@ -10,7 +10,7 @@ app.use(express.json());
 
 const databaseConnection = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/techSchoolApp");
+    await mongoose.connect("mongodb+srv://kennethnwosu2_db_user:DVhrxzAagLhftm3I@cluster0.rruiqoy.mongodb.net/techSchoolApp");
     console.log("Database connected successfully");
   } catch (error) {
     console.log("Database connection failed", error);
